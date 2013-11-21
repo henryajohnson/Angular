@@ -3,5 +3,7 @@ pokemonApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/pokemon', {
 		templateUrl: 'views/pokemon.html',
 		controller: 'PokemonCtrl'
+		}).otherwise({
+			templateUrl: 'views/error.html'
 		});
 }]);
