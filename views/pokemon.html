@@ -1,0 +1,13 @@
+<div data-ng-repeat="pokemon in pokemons" class="pokemon">
+          <div class="pokemonType" ng-switch on="pokemon.type">
+              <div class="typeColor" ng-switch-when="Electric" style="background-color:#F8D030;"></div>
+              <div class="typeColor" ng-switch-when="Fire" style="background-color:#F08030;"></div>
+              <div class="typeColor" ng-switch-when="Grass" style="background-color:#78C850;"></div>
+              <div class="typeColor" ng-switch-when="Water" style="background-color:#6890F0;"></div>
+            </div>
+          <div class="pokemonInfo">
+            <div class="pokemonTitle">
+              {{pokemon.name}} - {{pokemon.type}} - {{pokemon.status}}
+            </div>
+          </div>
+        </div>

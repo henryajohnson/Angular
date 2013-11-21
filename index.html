@@ -1,0 +1,50 @@
+<!doctype HTML>
+<html ng-app="pokemonApp">
+  <head>
+  <style>
+      .pokemon {
+        width: 300px;
+        height: 150px;
+        border: 1px solid #DDD;
+        background-color: #EFEFEF;
+        margin: 10px;
+        padding: 0;
+        float: left;
+      }
+      .pokemon:hover {
+        box-shadow: 0 0 2px 1px #DDD;
+      }
+      .pokemonType {
+        width: 30%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+      }
+      .typeColor {
+        height: 100%;
+        width: 100%;
+      }
+      .pokemonInfo {
+        float: left;
+        width: 70%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      .pokemonTitle {
+        margin: 10px 0 10px 10px;
+      }
+    </style>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/pokemon.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div ng-view>
+      </div>
+    </div>
+  </body>
+</html>
