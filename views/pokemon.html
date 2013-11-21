@@ -1,4 +1,4 @@
-<div data-ng-repeat="pokemon in pokemons" class="pokemon">
+<div data-ng-repeat="pokemon in pokemons" class="pokemon" ng-click="clickEvent()">
           <div class="pokemonType" ng-switch on="pokemon.type">
               <div class="typeColor" ng-switch-when="Electric" style="background-color:#F8D030;"></div>
               <div class="typeColor" ng-switch-when="Fire" style="background-color:#F08030;"></div>
@@ -9,5 +9,6 @@
             <div class="pokemonTitle">
               {{pokemon.name}} - {{pokemon.type}} - {{pokemon.status}}
             </div>
+            <textarea data-ng-model="pokemon.type"></textarea>
           </div>
         </div>
